@@ -36,8 +36,8 @@
   --serif:'Playfair Display', Georgia, serif;
   --sans:'DM Sans', system-ui, sans-serif;
   --easing:cubic-bezier(0.16,1,0.3,1);
-  --nav-bg-opacity:0.82;
-  --nav-text:#ffffff;
+  --nav-bg-opacity:1;
+  --nav-text:#000000;
   --nav-btn-bg:#0c0c0a;
   --nav-btn-text:#faf8f4;
 }
@@ -89,7 +89,7 @@ nav{
   transition:padding .5s var(--easing),background .4s,box-shadow .4s;
 }
 nav.stuck{
-  background:rgba(250,248,244,0.82);
+  background:rgba(255,255,255,1);
   backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);
   padding:1rem 5vw;
   box-shadow:0 1px 0 rgba(0,0,0,.06);
@@ -720,7 +720,7 @@ footer{background:var(--fg);border-top:1px solid rgba(255,255,255,.06);padding:1
   .faq-inner{grid-template-columns:1fr;gap:2.5rem}
   .contact-grid{grid-template-columns:1fr;gap:3.5rem}
   .form-row{grid-template-columns:1fr}
-  .hero-actions{flex-direction:column;align-items:flex-start}
+  .hero-actions{flex-direction:column;align-items:center}
   .p-tabs{display:flex;justify-content:center;gap:.5rem;margin-bottom:2rem;flex-wrap:wrap}
   .p-tab{padding:.5rem 1.2rem;border-radius:100px;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;background:rgba(12,12,10,.05);border:1px solid var(--border);color:var(--muted);transition:all .25s}
   .p-tab-active,.p-tab:hover{background:var(--fg);color:#fff;border-color:var(--fg)}
@@ -741,8 +741,9 @@ footer{background:var(--fg);border-top:1px solid rgba(255,255,255,.06);padding:1
   .team-grid{grid-template-columns:1fr 1fr;gap:1rem}
   .tm-photo{aspect-ratio:1}
   .map-wrap{height:300px}
-  .hero-badge{font-size:.58rem;padding:.35rem .85rem;letter-spacing:.14em;margin-bottom:1.75rem}
-  .hero-actions{align-items:center;margin-top:3rem}
+  .hero-content{position:static}
+  .hero-badge{font-size:.58rem;padding:.35rem .85rem;letter-spacing:.14em;margin-bottom:1.5rem}
+  .hero-actions{position:absolute;bottom:3.5rem;left:0;right:0;flex-direction:column;align-items:center;gap:.75rem;margin-top:0}
   .hero-cta{padding:.65rem .65rem .65rem 1.4rem;font-size:.75rem;gap:.75rem}
   .hero-cta-icon{width:30px;height:30px;font-size:.75rem}
   .intro,.services,.gallery,.reviews,.pricing,.testimonial,.faq,.team,.stats{
@@ -760,11 +761,11 @@ footer{background:var(--fg);border-top:1px solid rgba(255,255,255,.06);padding:1
 .has-bg-video+.has-bg-video .sec-blend-t{opacity:1}
 </style>
 <style id="nav-custom">
-#nav .nav-logo{color:#ffffff}
-#nav .nav-center a{color:#ffffff}
-#nav .nav-burger span{background:#ffffff}
+#nav .nav-logo{color:#000000}
+#nav .nav-center a{color:#000000}
+#nav .nav-burger span{background:#000000}
 #nav .nav-cta{background:#0c0c0a;color:#faf8f4}
-#nav.stuck{background:rgba(250,248,244,0.82)}
+#nav.stuck{background:rgba(255,255,255,1)}
 </style>
 </head>
 <body>
