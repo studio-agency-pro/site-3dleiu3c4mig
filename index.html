@@ -771,6 +771,12 @@ footer{background:var(--fg);border-top:1px solid rgba(255,255,255,.06);padding:1
 <body>
 
 
+<div id="loader" aria-hidden="true">
+  <div class="ld-word">
+    <span class="ld-mask"><span class="ld-inner">Karim Imad</span></span>
+  </div>
+  <div class="ld-bar-wrap"><div class="ld-bar"></div></div>
+</div>
 
 
 <header>
@@ -816,7 +822,7 @@ footer{background:var(--fg);border-top:1px solid rgba(255,255,255,.06);padding:1
       <span class="hero-badge-dot" aria-hidden="true"></span>
        · Agence web
     </div>
-    <h1 class="hero-title" id="heroTitle" style="font-size:clamp(2rem,5.5vw,5.5rem)"><span class="hw" style="display:inline-block;opacity:0;transform:translateY(28px)">Votre</span> <span class="hw" style="display:inline-block;opacity:0;transform:translateY(28px)">activité</span> <span class="hw" style="display:inline-block;opacity:0;transform:translateY(28px)">mérite</span> <span class="hw" style="display:inline-block;opacity:0;transform:translateY(28px)">d'être</span> <span class="hw" style="display:inline-block;opacity:0;transform:translateY(28px)">trouvée</span> <span class="hw" style="display:inline-block;opacity:0;transform:translateY(28px)">en</span> <span class="hw" style="display:inline-block;opacity:0;transform:translateY(28px)"><span class="hero-rotate-badge" style="background:#c9a96e;color:#ffffff" data-rotate='["Expert","Unique","Tqt"]'><span class="hero-rotate-inner">Expert</span></span></span></h1>
+    <h1 class="hero-title" id="heroTitle" style="font-size:clamp(2rem,5.5vw,5.5rem)"><span class="hw" style="display:inline-block"><span class="ch">V</span><span class="ch">o</span><span class="ch">t</span><span class="ch">r</span><span class="ch">e</span></span> <span class="hw" style="display:inline-block"><span class="ch">a</span><span class="ch">c</span><span class="ch">t</span><span class="ch">i</span><span class="ch">v</span><span class="ch">i</span><span class="ch">t</span><span class="ch">é</span></span> <span class="hw" style="display:inline-block"><span class="ch">m</span><span class="ch">é</span><span class="ch">r</span><span class="ch">i</span><span class="ch">t</span><span class="ch">e</span></span> <span class="hw" style="display:inline-block"><span class="ch">d</span><span class="ch">'</span><span class="ch">ê</span><span class="ch">t</span><span class="ch">r</span><span class="ch">e</span></span> <span class="hw" style="display:inline-block"><span class="ch">t</span><span class="ch">r</span><span class="ch">o</span><span class="ch">u</span><span class="ch">v</span><span class="ch">é</span><span class="ch">e</span></span> <span class="hw" style="display:inline-block"><span class="ch">e</span><span class="ch">n</span></span> <span class="hw" style="display:inline-block"><span class="hero-rotate-badge" style="background:#c9a96e;color:#ffffff" data-rotate='["Expert","Unique","Tqt"]'><span class="hero-rotate-inner">Expert</span></span></span></h1>
     <p class="hero-sub" id="heroSub" style="font-size:clamp(.9rem,1.4vw,1.05rem)"></p>
     <div class="hero-actions" id="heroActions">
       <a href="#gallery" class="hero-cta" style="background:#000000;color:#ffffff;">
@@ -832,8 +838,8 @@ footer{background:var(--fg);border-top:1px solid rgba(255,255,255,.06);padding:1
 </section>
 
 
-<section class="services has-bg-video" id="services">
-  <video class="sec-bg-video" autoplay muted loop playsinline><source src="https://videos.pexels.com/video-files/15439665/15439665-hd_2046_1080_30fps.mp4" type="video/mp4"/></video><div class="sec-overlay"></div><div class="sec-blend-t"></div><div class="sec-blend-b"></div>
+<section class="services" id="services">
+  
   <div class="container">
     <div class="services-head">
       <div class="s-label reveal-up">Ce que nous faisons</div>
@@ -870,8 +876,8 @@ footer{background:var(--fg);border-top:1px solid rgba(255,255,255,.06);padding:1
 </section>
 
 
-<section class="intro has-bg-video" id="about">
-  <video class="sec-bg-video" autoplay muted loop playsinline><source src="https://videos.pexels.com/video-files/35782164/15170199_1920_1080_24fps.mp4" type="video/mp4"/></video><div class="sec-overlay"></div><div class="sec-blend-t"></div><div class="sec-blend-b"></div>
+<section class="intro" id="about">
+  
   <div class="container">
     <div class="intro-grid">
       <div>
@@ -887,15 +893,15 @@ footer{background:var(--fg);border-top:1px solid rgba(255,255,255,.06);padding:1
 </section>
 
 
-<section class="gallery has-bg-video" id="gallery">
-  <video class="sec-bg-video" autoplay muted loop playsinline><source src="https://videos.pexels.com/video-files/34645822/14684325_1920_1080_30fps.mp4" type="video/mp4"/></video><div class="sec-overlay"></div><div class="sec-blend-t"></div><div class="sec-blend-b"></div>
-  <div class="container">
+<section class="gallery gallery-horiz" id="gallery">
+  
+  <div class="gallery-h-head container">
     <div class="gallery-head reveal-up">
       <div class="s-label">Réalisations</div>
       <h2 class="s-heading"><span class="line-mask"><span class="reveal-line">Notre travail</span></span></h2>
     </div>
-    <div class="gallery-grid"><div class="g-item"><img src="https://images.pexels.com/photos/8453801/pexels-photo-8453801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 1" loading="lazy" decoding="async"/></div><div class="g-item g-tall"><img src="https://images.pexels.com/photos/5483236/pexels-photo-5483236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 2" loading="lazy" decoding="async"/></div><div class="g-item"><img src="https://images.pexels.com/photos/7511744/pexels-photo-7511744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 3" loading="lazy" decoding="async"/></div><div class="g-item"><img src="https://images.pexels.com/photos/6899395/pexels-photo-6899395.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 4" loading="lazy" decoding="async"/></div><div class="g-item g-tall"><img src="https://images.pexels.com/photos/7534231/pexels-photo-7534231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 5" loading="lazy" decoding="async"/></div></div>
   </div>
+  <div class="gallery-h-track" id="galleryTrack"><div class="g-h-item"><img src="https://images.pexels.com/photos/8453801/pexels-photo-8453801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 1" loading="lazy" decoding="async"/></div><div class="g-h-item"><img src="https://images.pexels.com/photos/5483236/pexels-photo-5483236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 2" loading="lazy" decoding="async"/></div><div class="g-h-item"><img src="https://images.pexels.com/photos/7511744/pexels-photo-7511744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 3" loading="lazy" decoding="async"/></div><div class="g-h-item"><img src="https://images.pexels.com/photos/6899395/pexels-photo-6899395.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 4" loading="lazy" decoding="async"/></div><div class="g-h-item"><img src="https://images.pexels.com/photos/7534231/pexels-photo-7534231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Réalisation 5" loading="lazy" decoding="async"/></div></div>
 </section>
 
 <section class="reviews" id="avis">
@@ -1016,9 +1022,9 @@ function handleContact(e){
 (function() {
   gsap.registerPlugin(ScrollTrigger);
 
-  var ANIM     = 'standard';
+  var ANIM     = 'cinematique';
   var CURSOR   = false;
-  var LOADER   = false;
+  var LOADER   = true;
   var IS_DESKTOP = window.matchMedia('(min-width: 768px)').matches;
   var REDUCE   = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var FULL     = !REDUCE && ANIM !== 'minimal';
